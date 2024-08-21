@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gmail_</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Icon Cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-container">
+                    <div class="header-area flex-between">
+
+                        <!-- Header Item Left -->
+                        <div class="header-item-left align-center gap-10">
+                            <div class="menu-btn">
+                                <button class="btn btn-round-md"><i class='bx bx-menu'></i></button>
+                            </div>
+                            <!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <img src="image/logo_gmail_lockup_default_1x_r5.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Header Item Search -->
+                        <div class="header-item-search ">
+                            <div class="header-search flex-center gap-5" id="search-btn">
+                                <button class="btn btn-round-sm search-btn">
+                                    <i class="ri-search-2-line"></i>
+                                    <div class="btn-hover">Search</div>
+                                </button>
+                                <input class="search-input" type="text" placeholder="Search mail">
+                                <button class="btn btn-round-sm">
+                                    <i class="ri-dropbox-line"></i>
+                                    <div class="btn-hover">Show Search Option</div>
+                                </button>
+                            </div>
+
+                            <div class="search-dropdown" id="search-dropdown">
+                                <div class="search-dropdown-area">
+                                    <div class="header-search-drop flex-center gap-5">
+                                        <button class="btn btn-round-sm search-btn">
+                                            <i class="ri-search-2-line"></i>
+                                            <div class="btn-hover">Search</div>
+                                        </button>
+                                        <input class="search-input" type="text" placeholder="Search mail">
+                                        <button class="btn btn-round-sm">
+                                            <i class="ri-dropbox-line"></i>
+                                            <div class="btn-hover">Show Search Option</div>
+                                        </button>
+                                    </div>
+
+                                    <!-- header-search-drop Top -->
+                                    <div class="header-search-drop-top justify-start mt-2 gap-15">
+                                        <button class="btn">Has Attasment</button>
+                                        <button class="btn">Last 7 days</button>
+                                        <button class="btn">From me</button>
+                                    </div>
+
+                                    <!-- Recent Search Items -->
+                                    <ul class="recent-search-items">
+                                        <!-- Single Search Item -->
+                                        <li class="recent-search-item flex-between">
+                                            <div class="d-flex gap-15 text-icon">
+                                                <div><i class="ri-timer-2-line fw-bold"></i></div>
+                                                <div class="text">info@bd.com</div>
+                                            </div>
+                                            <button class="btn close-recent-btn"><i class="ri-close-line"></i></button>
+                                        </li>
+                                        <!-- Single Search Item -->
+                                        <li class="recent-search-item flex-between">
+                                            <div class="d-flex gap-15 text-icon">
+                                                <div><i class="ri-timer-2-line fw-bold"></i></div>
+                                                <div class="text">ajkamalkan.com</div>
+                                            </div>
+                                            <button class="btn close-recent-btn"><i class="ri-close-line"></i></button>
+                                        </li>
+                                        <!-- Single Search Item -->
+                                        <li class="recent-search-item flex-between">
+                                            <div class="d-flex gap-15 text-icon">
+                                                <div><i class="ri-timer-2-line fw-bold"></i></div>
+                                                <div class="text">tanvirahmed.com</div>
+                                            </div>
+                                            <button class="btn close-recent-btn"><i class="ri-close-line"></i></button>
+                                        </li>
+                                        <!-- Single Search Item -->
+                                        <li class="recent-search-item flex-between">
+                                            <div class="d-flex gap-15 text-icon">
+                                                <div><i class="ri-timer-2-line fw-bold"></i></div>
+                                                <div class="text">gmail.md.a</div>
+                                            </div>
+                                            <button class="btn close-recent-btn"><i class="ri-close-line"></i></button>
+                                        </li>
+                                        <!-- Single Search Item -->
+                                        <li class="recent-search-item flex-between">
+                                            <div class="d-flex gap-15 text-icon">
+                                                <div><i class="ri-timer-2-line fw-bold"></i></div>
+                                                <div class="text">info@bd.com</div>
+                                            </div>
+                                            <button class="btn close-recent-btn"><i class="ri-close-line"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Header Item Right -->
+                        <div class="header-item-right align-center gap-5">
+                            <div>
+                                <button class="btn btn-round-sm" id="help-btn">
+                                    <i class="ri-question-line"></i>
+                                    <div class="btn-hover">Support</div>
+                                </button>
+
+                                <!-- Help Dropdown -->
+                                <div class="help-dropdown dropdown" id="help-dropdown">
+                                    <ul class="flex-column gap-5">
+                                        <li>Help</li>
+                                        <li>Training</li>
+                                        <li>Update</li>
+                                        <hr>
+                                        <li>Send Feedback to google</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <button class="btn btn-round-sm " id="setting-dropdown-btn">
+                                    <i class="ri-settings-2-line"></i>
+                                    <div class="btn-hover">Setting</div>
+                                </button>
+
+                                <!-- Setting DropDown -->
+                                <div class="setting-dropdown" id="setting-dropdown">
+                                    <div class="setting-dropdown-area">
+
+                                        <!-- Head -->
+                                        <div class="setting-dropdown-head">
+                                            <div class="flex-between">
+                                                <div class="head-title">Quick settings</div>
+                                                <button class="btn" id="close-setting-dropdown"><i
+                                                        class="ri-close-line"></i></button>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="btn  btn-see-all">See all settings</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Setting Drop Body -->
+                                        <div class="setting-dropdown-body has-scrollbar">
+                                            <div class="setting-dropdown-body-area">
+
+                                                <div class="setting-dropdown-body-item">
+                                                    <div class="xs-font fw-medium">App in Gmail</div>
+                                                    <div class="flex-between mt-2">
+                                                        <div>
+                                                            <div>Chat and Meet</div>
+                                                            <button class="title-blue mt-1">Customize</button>
+                                                        </div>
+                                                        <div>
+                                                            <img src="image/Nav_promo.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="setting-dropdown-body-item">
+                                                    <div class="xs-font fw-medium">Density</div>
+                                                    <ul class="flex-column gap-10">
+                                                        <li class="flex-between">
+                                                            <div class="d-flex gap-15">
+                                                                <input type="radio" name="density" id="default-density">
+                                                                <label for="default-density">Default</label>
+                                                            </div>
+                                                            <div>
+                                                                <img src="image/Default.png" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="flex-between">
+                                                            <div class="d-flex gap-15">
+                                                                <input type="radio" name="density"
+                                                                    id="comfortable-density">
+                                                                <label for="comfortable-density">Comfortable</label>
+                                                            </div>
+                                                            <div>
+                                                                <img src="image/Default.png" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="flex-between">
+                                                            <div class="d-flex gap-15">
+                                                                <input type="radio" name="density"
+                                                                    id="compacet-density">
+                                                                <label for="compacet-density">Compacet</label>
+                                                            </div>
+                                                            <div>
+                                                                <img src="image/Default.png" alt="">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="setting-dropdown-body-item">
+                                                    <div class="flex-between">
+                                                        <div class="xs-font fw-medium">Theme</div>
+                                                        <button class="btn btn-view-all">View all</button>
+                                                    </div>
+                                                    <div class="mt-2 them">
+                                                        <img src="image/previewHD5.png" width=80px alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="setting-dropdown-body-item">
+                                                    <div class="xs-font fw-medium">Density</div>
+                                                    <ul class="flex-column gap-10">
+                                                        <li class="flex-between">
+                                                            <div class="d-flex gap-15">
+                                                                <input type="radio" name="density" id="default-density">
+                                                                <label for="default-density">Default</label>
+                                                            </div>
+                                                            <div>
+                                                                <img src="image/Default.png" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="flex-between">
+                                                            <div class="d-flex gap-15">
+                                                                <input type="radio" name="density"
+                                                                    id="comfortable-density">
+                                                                <label for="comfortable-density">Comfortable</label>
+                                                            </div>
+                                                            <div>
+                                                                <img src="image/Default.png" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="flex-between">
+                                                            <div class="d-flex gap-15">
+                                                                <input type="radio" name="density"
+                                                                    id="compacet-density">
+                                                                <label for="compacet-density">Compacet</label>
+                                                            </div>
+                                                            <div>
+                                                                <img src="image/Default.png" alt="">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-round-sm" id="google-app-btn">
+                                    <i class="ri-grid-fill"></i>
+                                    <div class="btn-hover">Google App</div>
+                                </button>
+                                <!-- Google APP  DropDown-->
+                                <div class="google-app-dropdown dropdown d-none has-scrollbar" id="google-app-drop">
+                                    <div class="google-app-wrap">
+                                        <div class="google-app-area">
+                                            <div class=" google-drop-items grid-3 gap-5">
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/profile.png" alt="">
+                                                    </div>
+                                                    <div class="title">Account</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/google-icon-logo.svg"
+                                                            alt=""></div>
+                                                    <div class="title">Google</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/map3.png" alt="">
+                                                    </div>
+                                                    <div class="title">Map</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/drive.png" alt="">
+                                                    </div>
+                                                    <div class="title">Drive</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/meet.png" alt="">
+                                                    </div>
+                                                    <div class="title">Meet</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/gamil.png" alt="">
+                                                    </div>
+                                                    <div class="title">Gmail</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/map3.png" alt="">
+                                                    </div>
+                                                    <div class="title">Map</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/drive.png" alt="">
+                                                    </div>
+                                                    <div class="title">Drive</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/meet.png" alt="">
+                                                    </div>
+                                                    <div class="title">Meet</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/gamil.png" alt="">
+                                                    </div>
+                                                    <div class="title">Gmail</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/map3.png" alt="">
+                                                    </div>
+                                                    <div class="title">Map</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/drive.png" alt="">
+                                                    </div>
+                                                    <div class="title">Drive</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="border"></div>
+
+                                        <div class="google-app-area">
+                                            <div class="grid-3 google-drop-items  second">
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/meet.png" alt="">
+                                                    </div>
+                                                    <div class="title">Meet</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/gamil.png" alt="">
+                                                    </div>
+                                                    <div class="title">Gmail</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/meet.png" alt="">
+                                                    </div>
+                                                    <div class="title">Meet</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/gamil.png" alt="">
+                                                    </div>
+                                                    <div class="title">Gmail</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/meet.png" alt="">
+                                                    </div>
+                                                    <div class="title">Meet</div>
+                                                </div>
+                                                <div class="google-drop-item ">
+                                                    <div class="div"><img width="50px" src="image/gamil.png" alt="">
+                                                    </div>
+                                                    <div class="title">Gmail</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <!-- Profile Button -->
+                                <button class="btn btn-round-sm profile-btn" id="profile-btn">
+                                    <img src="image/profile.png" alt="Profile Image">
+                                    <div class="btn-hover">
+                                        <div class="color-white">Google Account</div>
+                                        <div class="mt-1">MD Tanvir Ahmed</div>
+                                        <div>tanvirahmed.dmo@gmail.com</div>
+                                    </div>
+                                </button>
+
+                                <!-- Profile Dropdown -->
+                                <div class="profile-dropdown d-none gap-15" id="profile-dropdown">
+                                    <button class="close-btn btn" id="close-dropdown">
+                                        <i class="ri-close-large-line"></i>
+                                    </button>
+                                    <div class="email">tanvirahmed.dmo@gmail.com</div>
+
+                                    <!-- Profile Image and Name -->
+                                    <div class="flex-column gap-5">
+                                        <div class="profile-img-wrap">
+                                            <img class="profile-img" src="image/profile.png" alt="Profile Image">
+                                            <button class="btn edit"><i class="ri-pencil-line"></i></button>
+                                        </div>
+                                        <div class="name">Hi, Tanvir!</div>
+                                        <button class="btn manage">Manage your Google Account</button>
+                                    </div>
+
+                                    <!-- Add Account and Sign Out Buttons -->
+                                    <div class="add-and-signout flex-between">
+                                        <button class="btn">
+                                            <span><i class="ri-add-line"></i></span>
+                                            Add account
+                                        </button>
+                                        <button class="btn">
+                                            <span><i class="ri-logout-box-r-line"></i></span>
+                                            Sign Out
+                                        </button>
+                                    </div>
+
+                                    <!-- Privacy Policy and Terms of Service -->
+                                    <div class="policy flex-center gap-10">
+                                        <a href="#">Privacy Policy</a>
+                                        <a href="#">Terms of Service</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+
+            <!-- ___________  Sidebar Left  ____________ -->
+            <div class="sidebar-left active">
+
+                <!-- Sidebar Left Top -->
+                <div class="sidebar-left-top">
+                    <button class="compose-btn btn flex-center gap-15" id="compose-btn">
+                        <i class="ri-pencil-line"></i>
+                        Compose
+                    </button>
+                </div>
+
+                <!-- Sidebar Left Body -->
+                <div class="sidebar-left-body">
+                    <div class="sidebar-left-body-items flex-column">
+
+                        <!-- Single Item -->
+                        <div class="sidebar-left-body-item active flex-between">
+                            <div class="left flex-center gap-25">
+                                <i class="ri-inbox-fill"></i>
+                                Inbox
+                            </div>
+                            <div class="right">
+                                12
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="sidebar-left-body-item  flex-between">
+                            <div class="left flex-center gap-25">
+                                <i class="ri-star-line"></i>
+                                Started
+                            </div>
+                            <div class="right">
+                                3
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="sidebar-left-body-item  flex-between">
+                            <div class="left flex-center gap-25">
+                                <i class="ri-send-plane-2-line"></i>
+                                Sent
+                            </div>
+                            <div class="right">
+
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="sidebar-left-body-item  flex-between">
+                            <div class="left flex-center gap-25">
+                                <i class="ri-bookmark-line"></i>
+                                Draft
+                            </div>
+                            <div class="right">
+                                1
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="sidebar-left-body-item  flex-between">
+                            <div class="left flex-center gap-25">
+                                <i class="ri-delete-bin-line"></i>
+                                Trash
+                            </div>
+                            <div class="right">
+
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="sidebar-left-body-item  flex-between">
+                            <div class="left flex-center gap-25">
+                                <i class="ri-mail-check-line"></i>
+                                All Mail
+                            </div>
+                            <div class="right">
+
+                            </div>
+                        </div>
+
+                        <!-- More -->
+                        <div class="more-area">
+                            <!-- Single Item -->
+                            <div class="sidebar-left-body-item  flex-between" id="more-btn">
+                                <div class="left flex-center gap-25">
+                                    <i class="ri-arrow-down-s-line" id="more-icon"></i>
+                                    <div id="more-text">More</div>
+                                </div>
+                                <div class="right">
+
+                                </div>
+                            </div>
+
+                            <div class=" more" id="more-sidebar-left-items">
+                                <!-- Single Item -->
+                                <div class="sidebar-left-body-item  flex-between">
+                                    <div class="left flex-center gap-25">
+                                        <i class="ri-error-warning-line"></i>
+                                        Spam
+                                    </div>
+                                    <div class="right">
+                                        1
+                                    </div>
+                                </div>
+
+                                <!-- Single Item -->
+                                <div class="sidebar-left-body-item  flex-between">
+                                    <div class="left flex-center gap-25">
+                                        <i class="ri-send-plane-2-line"></i>
+                                        Scheduled
+                                    </div>
+                                    <div class="right">
+
+                                    </div>
+                                </div>
+
+                                <!-- Single Item -->
+                                <div class="sidebar-left-body-item social flex-between">
+                                    <div class="left flex-center gap-25">
+                                        <i class="ri-group-line"></i>
+                                        Social
+                                    </div>
+                                    <div class="right">
+                                        201
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Sidebar Left Bottom -->
+                <div class="sidebar-left-bottom mt-2 flex-between">
+                    <div class="fw-medium">Labels</div>
+                    <button class="btn"><i class="ri-add-line"></i></button>
+                </div>
+            </div>
+
+
+
+
+            <!-- ___________  Main Content  ___________ -->
+            <div class="main-content">
+
+                <!-- Main Content Header -->
+                <div class="main-content-header flex-between">
+                    <!-- Left -->
+                    <div class="main-content-header-left justify-start gap-5">
+                        <div class="check d-flex ">
+                            <button class="btn">
+                                <input type="checkbox">
+                                <div class="btn-hover">Select</div>
+                            </button>
+                            <button class="checkbox flex-center gap-5 btn">
+                                <i class="ri-arrow-down-s-fill xs-font"></i>
+                                <div class="btn-hover">Select</div>
+                            </button>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-round-sm reload">
+                                <i class=" ri-restart-line"></i>
+                                <div class="btn-hover">Reload</div>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-round-sm">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                                <div class="btn-hover">More</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="main-content-header-right flex-center gap-25">
+                        <div class="sort">
+                            <button class="xm-font btn ">1-50 of 200</button>
+
+                            <!-- Sort Dropdown -->
+                            <div class="sort-dropdown dropdown d-none">
+                                <div class="flex-column gap-5">
+                                    <div class="dropdown-item active">Newest</div>
+                                    <div class="dropdown-item">Oldest</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="arrow d-flex gap-20">
+                            <button class="btn">
+                                <i class="ri-arrow-left-s-line"></i>
+                                <div class="btn-hover">Newer</div>
+                            </button>
+                            <button class="btn">
+                                <i class="ri-arrow-right-s-line"></i>
+                                <div class="btn-hover">Older</div>
+                            </button>
+                        </div>
+
+                        <!-- Language -->
+                        <div class="language">
+                            <div class="d-flex gap-5">
+                                <button class="btn">
+                                    <i class="ri-keyboard-box-fill"></i>
+                                    <div class="btn-hover">input Tool</div>
+                                </button>
+                                <button class="btn">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                    <div class="btn-hover">Select Input Tool</div>
+                                </button>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Main Content Body -->
+                <div class="main-content-body has-scrollbar">
+                    <div class="top">
+                        <div class="top-items justify-start gap-25">
+                            <!-- Singe Content Body Top -->
+                            <div class="top-item active justify-start gap-10">
+                                <span><i class="ri-inbox-fill"></i></span>
+                                <div>Primary</div>
+                            </div>
+
+                            <!-- Singe Content Body Top -->
+                            <div class="top-item  justify-start gap-10">
+                                <span class="rotate"><i class="ri-price-tag-3-line"></i></span>
+                                <div>Promotions</div>
+                            </div>
+
+                            <!-- Singe Content Body Top -->
+                            <div class="top-item  justify-start gap-10">
+                                <span><i class="ri-group-line"></i></span>
+                                <div class="flex-column gap-5">
+                                    <div class="justify-start gap-10">
+                                        <div>Social</div>
+                                        <div class="tag">20 new</div>
+                                    </div>
+                                    <div class="bottom-text">Linkedin, YouTube</div>
+                                </div>
+                            </div>
+
+                            <!-- Singe Content Body Top -->
+                            <div class="top-item  justify-start gap-10">
+                                <span><i class="ri-information-line"></i></span>
+                                <div class="flex-column gap-5">
+                                    <div class="justify-start gap-10">
+                                        <div>Social</div>
+                                        <div class="tag">20 new</div>
+                                    </div>
+                                    <div class="bottom-text">Linkedin, YouTube</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Body  -->
+                    <div class="body ">
+                        <ul class="body-items has-scrollbar">
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 20</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Twitter</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Post a Video</strong>- You Are post a video added for 2-step
+                                    verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 11</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 19</strong>
+                                </div>
+                            </li>
+
+                            <li class="body-item flex-between">
+                                <!-- Left -->
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Daraz</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Tracking Number</strong>- your product number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+
+                                <!-- Right -->
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 12</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Linkdin</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Gamail</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 13</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> April 04</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Facebook</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>New Friend</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Dec 20</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 19</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Feb 12</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Linkdin</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> April 29</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Jan 12</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Password Change</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 9</strong>
+                                </div>
+                            </li>
+                            <li class="body-item flex-between">
+                                <div class="left justify-start gap-5">
+                                    <div class="grid d-none"><i class='bx bx-grid-vertical'></i></div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <button class="btn btn-round-sm"><i class="ri-star-s-line"></i></button>
+                                    <div>Google</div>
+                                </div>
+                                <div class="medile">
+                                    <strong>Security alert</strong>- Phone number added for 2-step verification
+                                    tanvirahmed.dmo@gmail.com
+                                </div>
+                                <div class="right justify-start ">
+                                    <div class="hide-icons  gap-10 d-none">
+                                        <div class="review">Review</div>
+                                        <div class="justify-start ">
+                                            <button class="btn btn-round-sm"><i
+                                                    class="ri-file-download-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-mail-open-line"></i></button>
+                                            <button class="btn btn-round-sm"><i class="ri-time-line"></i></button>
+                                        </div>
+                                    </div>
+                                    <strong class="date"> Aug 19</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- ___________  Sidebar Right  ___________ -->
+            <div class="sidebar-right">
+                <div class="sidebar-right-area">
+                    <div class="flex-column sidebar-right-btns gap-15">
+                        <button class="btn btn-round-sm">
+                            <img src=" image/calendar_2020q4_2x.png" alt="">
+                            <div class="btn-hover">Calendar</div>
+                        </button>
+                        <button class="btn btn-round-sm">
+                            <img src=" image/balp.png" alt="">
+                            <div class="btn-hover">Task</div>
+                        </button>
+                        <button class="btn btn-round-sm">
+                            <img src=" image/tasks_2021_2x.png" alt="">
+                            <div class="btn-hover">Other</div>
+                        </button>
+                        <button class="btn btn-round-sm">
+                            <img src=" image/contacts_2022_2x.png" alt="">
+                            <div class="btn-hover">Contacts</div>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-round-sm">
+                            <i class="ri-add-line"></i>
+                            <div class="btn-hover">Get Add</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Mail Compose -->
+        <div class="compose" id="compose-mail">
+            <div class="compose-area">
+
+                <!-- Compose Top -->
+                <div class="compose-top flex-between">
+                    <div class="title">New Message</div>
+                    <div class="flex-start gap-10">
+                        <button class="btn"><i class="ri-subtract-line"></i></button>
+                        <button class="btn"><i class="ri-fullscreen-line"></i></button>
+                        <button class="btn " id="compose-close-btn"><i class="ri-close-fill"></i></button>
+                    </div>
+                </div>
+
+                <!-- Compose Body -->
+                <div class="compose-body">
+                    <div class="compose-name">
+                        <input id="compose-input-name" type="text" placeholder="Recipients">
+                        <span class="cc d-none" id="cc">cc Bcc</span>
+                    </div>
+                    <div class="mt-2">
+                        <input id="compose-input-subject" type="text" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea name="" id="" placeholder="message..."></textarea>
+                    </div>
+                </div>
+
+
+                <!-- Compose Footer -->
+                <div class="compose-footer flex-between">
+                    <div class="send justify-start">
+                        <button class="btn send-btn">Send</button>
+                        <button class="btn arrow"><i class="ri-arrow-drop-down-fill"></i></button>
+                    </div>
+                    <div></div>
+                    <div>
+                        <button class="btn delete-btn"><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
